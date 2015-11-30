@@ -1,0 +1,71 @@
+/* MONOROM's RESET */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* render html5 elements as block  */
+header, footer, section, aside, nav, article { display: block; }
+
+/* no font-resize for IOS  */
+html{ -webkit-text-size-adjust: none; }
+
+
+
+/* im Header */
+
+
+#titel {
+}
+
+
+nav li:hover{
+	background-color: F0E18D;
+}
+
+
+
+
+
+
+/* Kacheln */
+
+.kachel {
+	box-sizing: border-box;
+	background-color: LightSteelBlue;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 0px 5px;
+	
+}
+
+.kachel:hover {
+	background-color: F0E18D;
+}
+
+
+
+
+
+
+/* Produktseite Inhalte */
+
+.text-center h4{
+color: black;
+}
+
+
+
+
+
+/* Diverses */
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:link {
+color: green;
+}

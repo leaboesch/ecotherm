@@ -1,120 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ecotherm start</title>
+    <title>ecoTherm start</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-	<div class="container">
+</head>
+<body>
+<div class="container">
 
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img style="display:inline;" width="20px" height="20px" src="./schneeflocke.gif"/> ecoTherm</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Unser Angebot <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">Gewerbe</li>
-                  <li><a href="#">Punto Fumo</a></li>
-                  <li><a href="#">Infrarotheizung</a></li>
-                  <li><a href="#">Weitere Heizungen</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Privat</li>
-                  <li><a href="#">Stubenheizung</a></li>
-                  <li><a href="#">Gartenheizung</a></li>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img style="display:inline;" width="20px" height="20px"
+                                                      src="./schneeflocke.gif"/> ecoTherm</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Unser Angebot <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="angebot.html">Alle Produkte</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Gewerbe</li>
+                            <li><a href="#">Punto Fumo</a></li>
+                            <li><a href="infrarot.html">Infrarotheizungen</a></li>
+                            <li><a href="#">Weitere Heizungen</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Privat</li>
+                            <li><a href="#">Stubenheizungen</a></li>
+                            <li><a href="#">Gartenheizungen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Beratung</a></li>
+                    <li><a href="#">&Uuml;ber uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Beratung</a></li>
-              <li><a href="#">&Uuml;ber uns</a></li>
-              <li><a href="#">Kontakt</a></li>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div id="slider" style="margin:auto;text-align:center;">
+            <ul style="list-style-type:none;padding-left:0px;">
+                <li><img style="margin:auto;" class="img-responsive" src="./picture1.jpg"/></li>
+                <li style="display:none;margin:auto;"><img class="img-responsive" src="./picture2.jpg"/></li>
+                <li style="display:none;margin:auto;"><img class="img-responsive" src="./picture3.jpg"/></li>
             </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
+            <button class="btn btn-primary prevButton">&laquo; Previous</button>
+            <button class="btn btn-primary">Next &raquo;</button>
+        </div>
+        <h1>Herzlich willkommen!</h1>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-		<div id="slider" style="margin:auto;text-align:center;">
-			<ul style="list-style-type:none;padding-left:0px;">
-				<li><img style="margin:auto;" class="img-responsive" src="./picture1.jpg" /></li>
-				<li style="display:none;margin:auto;"><img class="img-responsive" src="./picture2.jpg" /></li>
-				<li style="display:none;margin:auto;"><img class="img-responsive" src="./picture3.jpg" /></li>
-			</ul>
-			<button class="btn btn-primary prevButton">&laquo; Previous</button>
-			<button class="btn btn-primary">Next &raquo;</button>
-		</div>
-		<h1>Herzlich willkommen!</h1>
-		<p>Wir m&ouml;chten Sie ganz herzlich auf unserer Webseite begr&uuml;ssen, und danken Ihnen f&uuml;r das Interesse an unseren Produkten.  Ihr eco-therm Team.</p>
-      </div>
-	  <div class="article">
-		<div class="thumbnail">
-			<img src="http://placehold.it/600x270" alt="">
-			<div class="caption">
-				<h4 class="text-center">Article 1</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Suspendisse aliquam, augue vitae pulvinar feugiat, magna ipsum varius tellus, quis lobortis est nulla nec ligula. 
-					Aenean cursus enim sit amet tortor rutrum lobortis. 
-					Vestibulum mattis mauris fringilla mauris volutpat, in euismod arcu ultricies. 
-					Nunc eget hendrerit lectus. Proin rutrum elit ut orci fringilla, sit amet ornare turpis molestie. 
-					Proin nec neque eget nulla scelerisque rhoncus sit amet vitae augue. 
-					Vivamus ipsum eros, sodales sed enim ac, malesuada iaculis mi. 
-					Morbi ut orci sit amet tellus posuere convallis. 
-					Cras rhoncus tincidunt ultrices.
-				</p>
-			</div>
-		</div>
-	  </div>
-	  <div class="article">
-		<div class="thumbnail">
-			<img src="http://placehold.it/600x270" alt="">
-			<div class="caption">
-				<h4 class="text-center">Article 2</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Suspendisse aliquam, augue vitae pulvinar feugiat, magna ipsum varius tellus, quis lobortis est nulla nec ligula. 
-					Aenean cursus enim sit amet tortor rutrum lobortis. 
-					Vestibulum mattis mauris fringilla mauris volutpat, in euismod arcu ultricies. 
-					Nunc eget hendrerit lectus. Proin rutrum elit ut orci fringilla, sit amet ornare turpis molestie. 
-					Proin nec neque eget nulla scelerisque rhoncus sit amet vitae augue. 
-					Vivamus ipsum eros, sodales sed enim ac, malesuada iaculis mi. 
-					Morbi ut orci sit amet tellus posuere convallis. 
-					Cras rhoncus tincidunt ultrices.
-				</p>
-			</div>
-		</div>
-	  </div>
+        <p><strong> Wir sorgen für Ihre perfekte Welle!</strong>
+            Als einer der grössten Heizungsanbieter der Ostschweiz beraten wir Sie kompetent und finden das für Sie
+            passende Produkt.<br>
+            Ihr ecoTherm-Team.</p>
+    </div>
+    <div class="article">
+        <div class="thumbnail">
+            <img src="http://placehold.it/600x270" alt="">
 
-    </div> <!-- /container -->
+            <div class="caption">
+                <h4 class="text-center">Tag der offenen Tür</h4>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
+                <p>
+                    Besuchen Sie uns am <strong>1. Februar 2016</strong> und blicken Sie hinter die Türen von ecoTherm.
+                    Neben attraktiven Angeboten und einem Wettbewerb, ist für Ihr leibliches Wohl gesorgt.
+                    Kommen Sie vorbei - Wir freuen uns auf Ihren Besuch!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="article">
+        <div class="thumbnail">
+            <img src="http://placehold.it/600x270" alt="">
+
+            <div class="caption">
+                <h4 class="text-center">NEU - Die Infrarotheizung Thermo30</h4>
+
+                <p>
+                    Heizplatten aus Glas oder auch Glasheizungen stellen eine weitere Alternative dar, die sich als
+                    Schmuckstück im Raum etablieren können.
+                    Sie senden ebenfalls die positiven und gesunden Infrarotstrahlen aus. Von der Aufmachung her passen
+                    sie sich perfekt in das Bad, die Küche
+                    oder den Wohnbereich ein. Sie kann an der Wand, aber oftmals auch an der Decke montiert werden.
+                    Bei den Glasheizungen ist das Metall Premium Produkt von Glaswärmt besonders geeignet.
+                    <br><br>
+                    Weitere Informationen zum Produkt finden Sie <a href="infrarot.htm">hier </a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
 		$(window).load(function(){
 				var pages = $('#slider li'), current=0;
 				var currentPage,nextPage;
@@ -140,6 +152,7 @@
 					nextPage.show();
 				});
 		});
-	</script>
-  </body>
+
+</script>
+</body>
 </html>
