@@ -17,32 +17,7 @@ html{ -webkit-text-size-adjust: none; }
 /* im Header */
 
 
-#titel {
-}
 
-
-nav li:hover{
-	background-color: F0E18D;
-}
-
-
-
-
-
-
-/* Kacheln */
-
-.kachel {
-	box-sizing: border-box;
-	background-color: LightSteelBlue;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 5px 0px 5px;
-	
-}
-
-.kachel:hover {
-	background-color: F0E18D;
-}
 
 
 
@@ -51,20 +26,12 @@ nav li:hover{
 
 /* Produktseite Inhalte */
 
-.text-center h4{
-color: black;
-}
 
 
 
 
 
-/* Diverses */
-
-a {
-	text-decoration: none;
-	color: black;
-}
+/* Allgemein */
 
 a:link {
 color: green;
