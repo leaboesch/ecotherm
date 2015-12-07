@@ -28,6 +28,61 @@ html{ -webkit-text-size-adjust: none; }
 
 
 
+ @media screen and (min-width : 768px){
+ 
+ #articles {
+ 	display: -webkit-flex;
+ 	display: flex;
+ 	flex-direction: row;
+ }
+  
+.article {
+	width: calc(100% / 2 - 20px);
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	flex: 1;
+	-ms-flex-basis: auto;
+	-webkit-flex-basis: auto;
+	flex-basis: auto;
+	position:relative;
+	padding-bottom: 50px;
+
+	}
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+.article {
+	
+	width: calc(100% / 3 - 20px);
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	flex: 1;
+	-ms-flex-basis: auto;
+	-webkit-flex-basis: auto;
+	flex-basis: auto;
+
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+.article {
+	width: calc(100% / 4 - 20px);
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	flex: 1;
+	-ms-flex-basis: auto;
+	-webkit-flex-basis: auto;
+	flex-basis: auto;
+	}
+}
+
 
 
 
