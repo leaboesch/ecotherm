@@ -43,3 +43,20 @@ color: green;
 
 /* Bilder hervorheben */
 
+div.imageHold {
+ transition: transform 0.8s;
+ -moz-transition: transform 0.8s;
+ -webkit-transition: transform 0.8s;
+ -o-transition: transform 0.8s;
+ -ms-transition: transform 0.8s;
+}
+div.imageHold:hover {
+ cursor: zoom-in;
+ cursor: -moz-zoom-in;
+ cursor: -webkit-zoom-in;
+ transform: scale(2.0, 2.0);
+ -moz-transform: scale(2.0, 2.0);
+ -webkit-transform: scale(2.0, 2.0);
+ -o-transform: scale(2.0, 2.0);
+ -ms-transform: scale(2.0, 2.0);
+}
