@@ -34,20 +34,19 @@ html{ -webkit-text-size-adjust: none; }
  	display: -webkit-flex;
  	display: flex;
  	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	-webkit-flex-wrap:wrap;
+ 	justify-content: flex-start;
  }
   
 .article {
 	width: calc(100% / 2 - 20px);
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;
-	flex: 1;
 	-ms-flex-basis: auto;
 	-webkit-flex-basis: auto;
 	flex-basis: auto;
 	position:relative;
 	padding-bottom: 50px;
-
+	
 	}
 
 }
@@ -58,10 +57,7 @@ html{ -webkit-text-size-adjust: none; }
 .article {
 	
 	width: calc(100% / 3 - 20px);
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;
-	flex: 1;
+
 	-ms-flex-basis: auto;
 	-webkit-flex-basis: auto;
 	flex-basis: auto;
@@ -73,10 +69,6 @@ html{ -webkit-text-size-adjust: none; }
 
 .article {
 	width: calc(100% / 4 - 20px);
-	-webkit-flex-grow: 1;
-	-ms-flex-grow: 1;
-	flex-grow: 1;
-	flex: 1;
 	-ms-flex-basis: auto;
 	-webkit-flex-basis: auto;
 	flex-basis: auto;
