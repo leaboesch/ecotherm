@@ -9,147 +9,137 @@
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-<div class="container">
+	<div class="container">
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="startseite.html"><img style="display:inline;" width="20px" height="20px"
-                                                                    src="./schneeflocke.gif"/> ecoTherm</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Unser Angebot <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Alle Produkte</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Gewerbe</li>
-                            <li><a href="#">Punto Fumo</a></li>
-                            <li><a href="infrarot.html">Infrarotheizungen</a></li>
-                            <li><a href="#">Weitere Heizungen</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Privat</li>
-                            <li><a href="#">Stubenheizungen</a></li>
-                            <li><a href="#">Gartenheizungen</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Beratung</a></li>
-                    <li><a href="#">&Uuml;ber uns</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-        <!--/.container-fluid -->
-    </nav>
-    <h1>Unser Angebot</h1>
-    <div class="article">
-        <div class="thumbnail">
-            <a href="#"> <img src="http://placehold.it/600x270" alt=""> </a>
+		<!-- Static navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+							aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="startseite.html"><img style="display:inline;" width="20px" height="20px"
+																		src="./schneeflocke.gif"/> ecoTherm</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							   aria-expanded="false">Unser Angebot <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Alle Produkte</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Gewerbe</li>
+								<li><a href="#">Punto Fumo</a></li>
+								<li><a href="infrarot.html">Infrarotheizungen</a></li>
+								<li><a href="#">Weitere Heizungen</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Privat</li>
+								<li><a href="#">Stubenheizungen</a></li>
+								<li><a href="#">Gartenheizungen</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Beratung</a></li>
+						<li><a href="#">&Uuml;ber uns</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+		<h1>Unser Angebot</h1>
+		<div id="articles">
+			<div class="article">
+				<div class="thumbnail">
+					<a href="#"> <img src="http://placehold.it/600x270" alt=""> </a>
+					<div class="caption">
+						<h4 class="text-center"><a href="#"> Punto Fumo </a></h4>
+						<p>
+							Der beheizte Rauchertisch mit cleverem Bewegungsmelder. Er eignet sich vorallem für kühlere Tage um
+							angenehm im Aussenbereich einen Raucherbereich zu schaffen.
+						</p>
+						<br>
+						<span style="color: green; cursor:pointer;"
+							  onclick="document.getElementById('text').style.display='block';document.getElementById('an').style.display='none';document.getElementById('zu').style.display='block'"
+							  id="an" style="display: block">mehr Informationen</span>
+						<span onclick="document.getElementById('text').style.display='none';document.getElementById('an').style.display='block';document.getElementById('zu').style.display='none'"
+							  id="zu" style="color: green; display: none;cursor:pointer">weniger Informationen</span>
+						<div id="text" style="display: none">
+							<h5><strong>Technische Daten</strong></h5>
+							<ul>Leistung: zwei mal 1000 Watt</ul>
+							<ul>Beheizbare Fläche: bis zu 12 m2</ul>
+							<ul>Höhe: 222 cm</ul>
+							<ul>Farbe: Glimmergrau</ul>
+							<ul>Schutzart: IPX5</ul>
+							<ul>Anschlusskabel: Da 2 x 1000 Watt reicht eine 230V Steckdose aus</ul>
+							<ul>Benötigte Absicherung: 10 A träge</ul>
+							<ul>Garantie: 2 Jahre</ul>
+							<h5><strong>Lieferumfang</strong></h5>
+							<ul>Punto Fumo Tisch mit 2 Infrarotstrahler und Bewegungssensor</ul>
+							<ul>Bedienungsanleitung</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="article">
+				<div class="thumbnail">
+					<a href="infrarot.html"> <img src="http://placehold.it/600x270" alt=""> </a>
+					<div class="caption">
+						<h4 class="text-center"><a href="infrarot.html"> Infrarotheizungen </a></h4>
+						<p>
+							Infrarot erzeugt nicht wie herkömmliche Heizungen warme Luft, welche nutzlos an die Decke steigt,
+							sondern die Wärme wird praktisch verlustfrei direkt im Raum erzeugt und gleichmässig in Decken,
+							Wänden und Böden gespeichert. Dadurch entsteht ein sehr angenehmes und gesundes Raumklima.
+							Es können bei Bedarf einzelne Räume oder ganze Gebäude effizient, umweltgerecht und kostengünstig
+							beheizt werden.
+							<br><br>
+							Infrarot Wärme-Elemente, richtig geplant, benötigen weniger als 50% Strom einer Elektroheizung und
+							nicht mehr als eine Luft/Wasser-Wärmepumpe. Ein einfacher Stromanschluss und ein handelsüblicher
+							Raumthermostat genügen.
+							Es entstehen keine Service- und Folge kosten. Mit Infrarot kann ein gut isolierter Raum von 23m2
+							entsprechend 52m3 mit
+							nur 1kWh beheizt werden und benötigt Strom für nur 7 bis 8 Stunden pro Heiztag.
+						</p>
+						<br>
+						<span style="color: green; cursor:pointer;"
+							  onclick="document.getElementById('text').style.display='block';document.getElementById('an').style.display='none';document.getElementById('zu').style.display='block'"
+							  id="an" style="display: block">mehr Informationen</span>
+						<span onclick="document.getElementById('text').style.display='none';document.getElementById('an').style.display='block';document.getElementById('zu').style.display='none'"
+							  id="zu" style="color: green; display: none;cursor:pointer">weniger Informationen</span>
+						<div id="text" style="display: none">
+							<p>Die Infrarot-Tiefenwärme (gleich der Sonnenwärme) wirkt sich äusserst positiv auf das Raumklima
+								und die Gesundheit aus. Es entstehen keine störende Luftzirkulationen, Staubaufwirbelungen,
+								Schimmelbildungen, trockene Luft, Lärm, Russ- und CO2-Emissionen.
+								Die Infrarot Tiefen-Wärme hilft auch bei vielen Krankheiten und Heilungsprozessen.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
 
-            <div class="caption">
-            <h4 class="text-center"><a href="#"> Punto Fumo </a></h4>
-
-            <p>
-                Der beheizte Rauchertisch mit cleverem Bewegungsmelder. Er eignet sich vorallem für k&uuml;hlere Tage um
-                angenehm im Aussenbereich einen Raucherbereich zu schaffen.
-                Die beiden 1000 Watt Infrarotröhren sorgen für eine wohlige W&auml;rme und trotzdem reicht eine herk&ouml;mmliche
-                230 V Steckdose für den Betrieb aus.
-                Ein Starkstromanschluss ist nicht n&ouml;tig. Der Punto Fumo ist mit einem automatischen Bewegungsmelder
-                versehen, die Infrarotr&ouml;hren schalten sich also nur ein,
-                wenn sich effektiv Personen in der Nähe des Tischs aufhalten, dadurch wird nur Strom verbraucht, wenn er
-                ben&ouml;tigt wird. Der Punto Fumo ist komplett regen
-                -und strahlwassergeschützt. Besonders für die Dienstleistungs -und Gastronomiebranche geeignet.</p>
-
-            <span style="color: green; cursor:pointer;"
-                  onclick="document.getElementById('text').style.display='block';document.getElementById('an').style.display='none';document.getElementById('zu').style.display='block'"
-                  id="an" style="display: block">mehr Informationen</span>
-            <span onclick="document.getElementById('text').style.display='none';document.getElementById('an').style.display='block';document.getElementById('zu').style.display='none'"
-                  id="zu" style="color: green; display: none;cursor:pointer">weniger Informationen</span>
-            <div id="text" style="display: none">
-                <h5><strong>Technische Daten</strong></h5>
-                <ul>Leistung: zwei mal 1000 Watt</ul>
-                <ul>Beheizbare Fl&auml;che: bis zu 12 m2</ul>
-                <ul>Höhe: 222 cm</ul>
-                <ul>Farbe: Glimmergrau</ul>
-                <ul>Schutzart: IPX5</ul>
-                <ul>Anschlusskabel: Da 2 x 1000 Watt reicht eine 230V Steckdose aus</ul>
-                <ul>Benötigte Absicherung: 10 A träge</ul>
-                <ul>Garantie: 2 Jahre</ul>
-                <h5><strong>Lieferumfang</strong></h5>
-                <ul>Punto Fumo Tisch mit 2 Infrarotstrahler und Bewegungssensor</ul>
-                <ul>Bedienungsanleitung</ul>
-            </div>
-    </div>
-</div>
-</div>
-<div class="article">
-    <div class="thumbnail">
-        <a href="infrarot.html"> <img src="http://placehold.it/600x270" alt=""> </a>
-
-        <div class="caption">
-
-            <h4 class="text-center"><a href="infrarot.html"> Infrarotheizungen </a></h4>
-
-            <p>
-                Infrarot erzeugt nicht wie herk&ouml;mmliche Heizungen warme Luft, welche nutzlos an die Decke steigt,
-                sondern die W&auml;rme wird praktisch verlustfrei direkt im Raum erzeugt und gleichm&auml;ssig in Decken,
-                Wänden und B&ouml;den gespeichert. Dadurch entsteht ein sehr angenehmes und gesundes Raumklima.
-                Es k&ouml;nnen bei Bedarf einzelne R&auml;ume oder ganze Geb&auml;ude effizient, umweltgerecht und kostengünstig
-                beheizt werden.
-                <br><br>
-                Infrarot W&auml;rme-Elemente, richtig geplant, ben&ouml;tigen weniger als 50% Strom einer Elektroheizung und
-                nicht mehr als eine Luft/Wasser-W&auml;rmepumpe. Ein einfacher Stromanschluss und ein handels&uuml;blicher
-                Raumthermostat gen&uuml;gen.
-                Es entstehen keine Service- und Folge kosten. Mit Infrarot kann ein gut isolierter Raum von 23m2
-                entsprechend 52m3 mit nur 1kWh beheizt werden und ben&ouml;tigt Strom für nur 7 bis 8 Stunden pro Heiztag.</p>
-
-            <span style="color: green; cursor:pointer;"
-                  onclick="document.getElementById('text2').style.display='block';document.getElementById('an2').style.display='none';document.getElementById('zu2').style.display='block'"
-                  id="an2" style="display: block">mehr Informationen</span>
-            <span onclick="document.getElementById('text2').style.display='none';document.getElementById('an2').style.display='block';document.getElementById('zu2').style.display='none'"
-                  id="zu2" style="color: green; display: none;cursor:pointer">weniger Informationen</span>
-            <div id="text2" style="display: none">
-
-                <p>Die Infrarot-Tiefenw&auml;rme (gleich der Sonnenw&auml;rme) wirkt sich &auml;usserst positiv auf das Raumklima
-                    und die Gesundheit aus. Es entstehen keine st&ouml;rende Luftzirkulationen, Staubaufwirbelungen,
-                    Schimmelbildungen, trockene Luft, L&auml;rm, Russ- und CO2-Emissionen.
-                    Die Infrarot Tiefen-W&auml;rme hilft auch bei vielen Krankheiten und Heilungsprozessen.</p>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-<!-- /container -->
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
 </body>
