@@ -13,8 +13,15 @@ header, footer, section, aside, nav, article { display: block; }
 html{ -webkit-text-size-adjust: none; }
 
 
+/* Allgemein */
 
-/* im Header */
+a:link {
+color: green;
+}
+
+.thumbnail {
+	height:100%;
+}
 
 
 /* Carousel */
@@ -23,69 +30,42 @@ html{ -webkit-text-size-adjust: none; }
 }
 
 
+/* FlexBox */
 
-
-
-
-/* Produktseite Inhalte */
-
-
-
- @media screen and (min-width : 768px){
- 
- #articles {
- 	display: -webkit-flex;
- 	display: flex;
- 	flex-direction: row;
- 	flex-wrap: wrap;
- 	-webkit-flex-wrap:wrap;
- 	justify-content: flex-start;
- }
-  
-.article {
-	width: calc(100% / 2 - 20px);
-	-ms-flex-basis: auto;
-	-webkit-flex-basis: auto;
-	flex-basis: auto;
-	position:relative;
-	padding-bottom: 50px;
-	
+@media screen and (min-width : 768px){
+	#articles {
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		-webkit-flex-wrap:wrap;
+		justify-content: flex-start;
 	}
-
+	
+	.article {
+		width: calc(100% / 2 - 20px);
+		-ms-flex-basis: auto;
+		-webkit-flex-basis: auto;
+		flex-basis: auto;
+		position:relative;
+		padding-bottom: 50px;
+		margin: 0 10px;
+	}
 }
 
 
 @media screen and (min-width: 992px) {
-
-.article {
-	
-	width: calc(100% / 3 - 20px);
-
-	-ms-flex-basis: auto;
-	-webkit-flex-basis: auto;
-	flex-basis: auto;
-
+	.article {
+		width: calc(100% / 3 - 20px);
 	}
 }
 
 @media screen and (min-width: 1200px) {
-
-.article {
-	width: calc(100% / 4 - 20px);
-	-ms-flex-basis: auto;
-	-webkit-flex-basis: auto;
-	flex-basis: auto;
+	.article {
+		width: calc(100% / 4 - 20px);
 	}
 }
-
-
-
-
-/* Allgemein */
-
-a:link {
-color: green;
-}
+/* End FlexBox */
 
 
 /* Bilder hervorheben */
